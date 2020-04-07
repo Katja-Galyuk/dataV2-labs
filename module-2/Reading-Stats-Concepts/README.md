@@ -17,10 +17,28 @@ You know both concepts but, is there a difference? Are they synonims? Start inve
 
 As a good reference (once you have looked for some information) you have   [this](http://expected.news/value2) article.
 
+###### 
+Expected value: It is the average value of a random variable over a large number of experiments. In other words, it's the return one can expect for some kind of action.
+Example: how many questions you might get right if you guess on a multiple choice test
+For example, if we take a 20 question multiple-choice test with A,B,C,D as the answers, and  guess all “A”, then we can expect to get 25% right (5 out of 20). The math behind this kind of expected value is:
+        The probability (P) of getting a question right if we guess: 0.25
+        The number of questions on the test (n)*: 20
+        P x n = 0.25 x 20 = 5
+
+If an experiment were to be repeated infinitely often, the average value of a discrete random variable would be the mean value of the results of the experiment. This mean value can be interpreted as an expected value, i.e. we would expect this value if we were to perform the experiment infinitely. Expected value and arithmetic mean are identical if the probability for each attempt is the same. This is the case in a binomially distributed experiment, for example. If the probability is different for each experiment the expected value is a weighted arithmetic mean.
+
+The expected value can be used to determine whether a game is "fair". In a fair game, the expected value would be zero - you would lose as often as you would win. In the long run, profit and loss would balance each other out.
+
+
+
+
 ### Challenge 2: What is the "problem" in science with p-values?
 We have told you that a lot of scientifical investigations are based on p-values. The last week, Nature magazine published [an article](http://nature.social/statistical4) regarding the problem. Start digging on it!
 
-Don't hesitate to use more articles if you want to :)
+######
+According to the article, one should not conclude that there is "no difference" or "no association" just because a P-value has reached a certain magnitude or because a confidence interval includes zero. Nor should one come to the conclusion that two studies contradict each other because one had a statistically significant result but the other did not.
+
+Furthermore, the authors of this article state that surveys in numerous papers have shown that statistically non-significant results are interpreted as "no difference" or "no effect" in about half of the cases. The authors of this article call for the entire concept of statistical significance to be abandoned. They further argue that one has to learn to accept uncertainty. A practical way to do this, would be to rename confidence intervals to "compatibility intervals" in order to avoid excessive confidence. In particular, the authors also recommend describing the practical effects of all values within the interval, especially the observed effect (or point estimate) and the limits. It should be noted that all values between the bounds of the interval are reasonably compatible with the data given the statistical assumptions used to calculate the interval. Therefore, the authors do not consider it useful to mark a particular value (such as the zero value) in the interval as "shown".
 
 
 ### Challenge 3: Applying testing to a specific case: A/B testing.
@@ -62,3 +80,4 @@ You need to submit a markdown file with the answers to the questions above. You 
 
 ## Submission
 Upon completion, add your deliverables to git. Then commit git and push your branch to the remote.
+
